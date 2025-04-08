@@ -83,7 +83,7 @@ function TeamDetails({ project, studentIndices, matchingData }) {
             </tr>
             {/* Row for Satisfactory Score */}
             <tr>
-              <td className="row-label"><strong>Satisfactory Score</strong></td>
+              <td className="row-label"><strong>Satisfaction Score</strong></td>
               {skillColumns.map(col => (
                 <td key={col.skillIndex}>
                   {col.satScore.toFixed(2)}
