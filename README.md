@@ -39,11 +39,12 @@ In a macOS terminal:
 
 In root directory of repository:
 
-1. cd CAP25
+1. cd CAP25/frontend
 2. npm install				# to install JavaScript dependencies
-3. ./debug.sh				# to create venv and download dependencies from requirements.txt
-4. source venv/bin/activate 	# to activate venv
-5. ./start.sh					# to run application
+3. cd ..
+4. ./debug.sh				# to create venv and download dependencies from requirements.txt
+5. source venv/bin/activate 	# to activate venv
+6. ./start.sh					# to run application
 
 ## Note:
 
