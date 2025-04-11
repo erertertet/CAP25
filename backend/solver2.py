@@ -163,8 +163,12 @@ min_goodness = model.NewIntVar(0, 1000000, "min_goodness")
 
 model.AddMinEquality(min_goodness, team_goodness)
 
+# this is the place of defining the big objective function
 # Objective: maximize the minimum team goodness.
-model.Maximize(min_goodness)
+# as tested this could speed up the solver and 
+# give better result for minimum team goodness
+# compared to just maximizing the minimum team goodness
+model.Maximize(sum(team_goodness) + 1000000 * min_goodness)
 
 
 # from assignment directly to json
